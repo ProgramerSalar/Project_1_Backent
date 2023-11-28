@@ -27,6 +27,7 @@ app.use(bodyParser.json())
 app.use(morgan('tiny'))
 // app.use(authJwt())
 // app.use(errorHandler)
+app.use('/public/uploads', express.static(__dirname + 'public/uploads'))
 
 
 
